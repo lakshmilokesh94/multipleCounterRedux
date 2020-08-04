@@ -17,6 +17,7 @@ const render = () => {
           <Switch>
             <Route exact path="/" component={Login} />
             <Route path="/home" component={App} />
+            <Route exact path="/*" component={Login} />
           </Switch>
         </Router>
       </Provider>
